@@ -1,12 +1,12 @@
 import java.util.Scanner;
 public class Main {
-    public static Scanner in = new Scanner(System.in);
+    public static Scanner in = new Scanner(System.in);// инициализация модуля ввода
     public static void main(String[] args) {
-        double x = in.nextDouble();
+        double x = in.nextDouble(); // ввод дробных чисел
         double y = in.nextDouble();
-        System.out.printf("%d ", Math.round(Math.floor(x / y)));
-        System.out.printf("%.0f ", x - y * Math.round(Math.floor(x / y)));
-        System.out.printf("%.2f ", x/y);
-        System.out.printf("%.4f", x/y - Math.round(Math.floor(x / y)));
+        System.out.printf("%d ", Math.round(Math.floor(x / y))); // костыль с округлением округления вниз, дабы получить число int
+        System.out.printf("%.0f ", x - y * Math.round(Math.floor(x / y))); //находим остаток, зная неполное частное
+        System.out.printf("%.2f ", x/y); // делим и округляем по формату
+        System.out.printf("%.4f", x/y - Math.round(Math.floor(x / y))); // находим нецелый остаток
     }
 }
