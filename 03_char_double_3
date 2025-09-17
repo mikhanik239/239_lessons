@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in); // инициализация модуля ввода
+    public static void main(String[] args) {
+        double a = in.nextDouble(); //вводим число
+        if (a >= 0) { //определяем его знак
+            System.out.printf("%d ", (int)Math.floor(a)); //округление вниз
+            System.out.printf("%.3f ", a-(int)Math.floor(a)); //нахождение остатка
+            System.out.printf("%d", (int)Math.round(a)); //округление по правилам математики
+        } else {
+            System.out.printf("%d ", (int)Math.ceil(a)); //округление вверх (по модулю всё ещё вниз)
+            System.out.printf("%.3f ", a-(int)Math.ceil(a)); //нахождение остатка
+            System.out.printf("%d", (int)Math.round(a)); //округление по правилам математики
+        }
+    }
+}   
