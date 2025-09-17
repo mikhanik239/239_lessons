@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        double a = in.nextDouble();
+        double b = in.nextDouble();
+        double c = in.nextDouble();
+        double d = in.nextDouble();
+        double e = in.nextDouble();
+        double f = in.nextDouble();
+        System.out.printf("%.2f %.2f\n", c-a, d-b);
+        System.out.printf("%.2f %.2f\n", (c-a)*e, (d-b)*f);
+        System.out.printf("%.2f", (c-a)*e+(d-b)*f);
+    }
+}
