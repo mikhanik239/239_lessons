@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Main {
-    public static Scanner in = new Scanner(System.in);
-    public static void main(String[] args) {
-        double x = in.nextDouble();
-        System.out.printf("%.2f", Math.sqrt((x*x)+((x+5)*(x+5))));
+    public static Scanner in = new Scanner(System.in); // инициализация модуля ввода
+    public static void main(String[] args) { // об. модуль программы
+        double x = in.nextDouble(); // ввод дробного числа
+        System.out.printf("%.2f", Math.sqrt((x*x)+((x+5)*(x+5)))); // вывод корнясуммы квадратов катетов
     }
 }
