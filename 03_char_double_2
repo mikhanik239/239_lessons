@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in); // инициализация модуля ввода
+    public static void main(String[] args) {
+        double a = in.nextDouble(); // ввод числа
+        System.out.printf("%.3f %.3f", 2*Math.PI*a, a*a*Math.PI); //по формулам находим искомые числа, всё просто :)
+    }
+}   
