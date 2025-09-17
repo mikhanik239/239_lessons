@@ -1,12 +1,13 @@
 import java.util.Scanner;
+// этот код является продвинутым решением, так что разберитесь в нём
 public class Main {
-    public static Scanner in = new Scanner(System.in);
+    public static Scanner in = new Scanner(System.in); // инициализация модуля ввода
     public static void main(String[] args) {
-        String str = in.nextLine();
-        String [] pair = str.split("/");
-        int x = Integer.valueOf(pair[0]);
+        String str = in.nextLine(); // получаем строку
+        String [] pair = str.split("/"); // при помощи этой команды разделяем её на множество строк
+        int x = Integer.valueOf(pair[0]); // переводим их в числа
         int y = Integer.valueOf(pair[1]);
 
-        System.out.printf("%.2f", (double)x/y);
+        System.out.printf("%.2f", (double)x/y); // делим
     }
 }
