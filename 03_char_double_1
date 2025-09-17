@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in); // инициализация модуля ввода
+    public static void main(String[] args) {
+        double a = in.nextDouble(); // вводим число
+        System.out.printf("%.3f %.3f %.3f %.3f %.3f", Math.abs(a), a*a, a*Math.PI, Math.atan(a), Math.tan(a));
+        // Math - библиотека, которую на удивление не надо импортировать
+        // В этих задачах нам нужны такие команды как:
+        // Math.PI - число пи
+        // Math.abs() - находит модуль числа
+        // Math.atan(x) - находит арктангенс по отношению x
+        // Math.tan(x) - находит тангенс по углу x (углы в радианах)
+    }
+}
