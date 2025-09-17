@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        System.out.printf("%d ", Math.round(Math.floor(x / y)));
+        System.out.printf("%.0f ", x - y * Math.round(Math.floor(x / y)));
+        System.out.printf("%.2f ", x/y);
+        System.out.printf("%.4f", x/y - Math.round(Math.floor(x / y)));
+    }
+}
