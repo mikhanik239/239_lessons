@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        String str = in.nextLine();
+        String [] pair = str.split("/");
+        int x = Integer.valueOf(pair[0]);
+        int y = Integer.valueOf(pair[1]);
+
+        System.out.printf("%.2f", (double)x/y);
+    }
+}
