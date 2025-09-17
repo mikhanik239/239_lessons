@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int ch = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in); // инициализация модуля ввода
+        int ch = scanner.nextInt(); // получаем число
 
-        System.out.println((char)(ch+64));
+        System.out.println((char)(ch+64)); // добавляем к нему код буквы A и переводим код в символ
     }
 }
