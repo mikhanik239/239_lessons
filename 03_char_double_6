@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char ch = scanner.next().charAt(0);//считываем символ
+
+        System.out.println((char)(ch-65+97));//т.к. a - 97, а A - 65 (их коды), то из индекса буквы вычитаем 65 и добавляем 97
+    }
+}
