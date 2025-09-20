@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        char ch = in.next().charAt(0);//вводим символ с клавиатуры
+        System.out.print((char)(ch + 1));//добавляем к коду символа 1 и выводим как символ
+        System.out.print(" ");//пишем пробел, т.к. метод print не ставит пробелы
+        System.out.print((char)(ch + 2));//добавляем к коду символа 2 и выводим как символ
+        System.out.print(" ");//пишем пробел, т.к. метод print не ставит пробелы
+        System.out.print((char)(ch + 3));//добавляем к коду символа 3 и выводим как символ
+        System.out.print(" ");//пишем пробел, т.к. метод print не ставит пробелы
+        System.out.print((char)(ch + 10));//добавляем к коду символа 10 и выводим как символ
+        System.out.print(" ");//пишем пробел, т.к. метод print не ставит пробелы
+        System.out.print((char)(ch - 5));//вычитаем от кода символа 1 и выводим как символ
+    }
+}
