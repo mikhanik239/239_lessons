@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        int x = in.nextInt();//ввод чисел
+        int y = in.nextInt();
+        boolean flageq = true;//флаг равенства
+        boolean flagpl = true;//флаг положительности
+        boolean flagdb = true;//флаг нечётности
+        boolean flagoopl = true;//флаг единственности положительности
+        if (x==y) {//проверка равенства
+            flageq=!flageq;
+        }
+        if (!(x>0 && y>0)) {//проверка положительности (&&-логическое и)
+            flagpl=!flagpl;
+        }
+        if (x%2==0 && y%2==0) {//проверка чётности
+            flagdb=!flagdb;
+        }
+        if (x*y>0 || x==y) {//проверка единственности(||-логическое или)
+            flagoopl=!flagoopl;
+        }
+        System.out.println(flageq);//
+        System.out.println(flagpl);
+        System.out.println(flagdb);
+        System.out.println(flagoopl);
+    }
+}
