@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in); //инициализируем ввод
+    public static void main(String[] args) {
+        int x = in.nextInt();// вводим число
+        boolean flag = true;//создаём бинарную переменную(true/false)
+        if (x%2!=0) {//%-взятие остатка
+            flag=!flag;//!-логическое отрицание
+        }
+        System.out.println(flag);//выводим флаг чётности и его отрицание
+        System.out.println(!flag);
+    }
+}
