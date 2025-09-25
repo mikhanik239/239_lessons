@@ -1,0 +1,16 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        char n = in.next().charAt(0);
+        //System.out.println((int)n);//проверка кода символа
+        System.out.println(47<n&&58>n);//проверка на число
+        System.out.println(64<n&&91>n);//проверка на заглавную латинницу
+        System.out.println((96<n&&123>n)||(64<n&&91>n));//проверка на латинницу
+        System.out.println(!((64<n&&91>n)||(96<n&&123>n)));//отрицание пред. действия
+        //0-9 48-57
+        //A-Z 65-90
+        //a-z 97-122
+    }
+}
