@@ -1,0 +1,11 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        double n = in.nextDouble();
+        //System.out.println((int)n);
+        System.out.println((1>=n)||((5<=n)&&(9>n)));
+        System.out.println((7<n)||((1<n)&&(3>=n)));
+    }
+}
