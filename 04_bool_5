@@ -1,0 +1,15 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        int n = in.nextInt();
+        //System.out.println((int)n);
+        System.out.println(n+58);
+        n=n+58;
+        int a = n%10;
+        int b = ((n-a)/10)%10;
+        int c = ((n-a-10*b)/100);
+        System.out.println((a!=b)&&(b!=c)&&(c!=a));
+    }
+}
