@@ -1,0 +1,20 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+public class Main {
+    public static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        String n = in.nextLine();
+        //System.out.println((int)n);
+        String [] arr = n.split("");
+        //System.out.println((int) arr[0].charAt(0));
+        //System.out.println((int) arr[1].charAt(0));
+        //System.out.println((int) arr[2].charAt(0));
+        int x = (int) arr[0].charAt(0);
+        int y = (int) arr[1].charAt(0);
+        int z = (int) arr[2].charAt(0);
+        boolean flag1 = (x!=y)&&(y!=z)&&(z!=x);
+        boolean flag2 = (47<x&&58>x)||(47<y&&58>y)||(47<z&&58>z);
+        boolean flag3 = (96<x&&123>x)||(96<y&&123>y)||(96<z&&123>z);
+        System.out.println((flag1&&flag2)&&flag3);
+    }
+}
